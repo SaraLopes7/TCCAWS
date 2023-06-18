@@ -1,0 +1,78 @@
+@keyframes effect_img1 {
+    0% {
+        filter: drop-shadow(-20px 20px 0px #0921D7);
+    }
+
+    35% {
+        filter: drop-shadow(-20px -20px 0px #0921D7);
+    }
+
+    70% {
+        filter: drop-shadow(0px 0px 0px #0921D7);
+    }
+
+    100% {
+        filter: drop-shadow(-20px 20px 0px #0921D7);
+    }
+}
+
+.main_matheus {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, #4D4646 12.56%, #0921D7 216.73%);
+}
+
+#section3_matheus {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, #4D4646 -41.09%, rgba(8, 175, 255, 0.5) 333.08%);
+    border-radius: 0px 0px 50px 50px;
+    padding: 25px 0;
+}
+
+#section3_matheus article {
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    column-gap: 5%;
+}
+
+#section3_part1 {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section3_part2 {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section3_matheus article img {
+    width: 100%;
+    animation-name: effect_img1;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+#section3_matheus h1 {
+    font-size: 55px;
+    color: #FFF;
+}
+
+#section3_matheus h3 {
+    font-size: 35px;
+    color: #FFF;
+    margin-top: 2%;
+}
+
+#section3_matheus p {
+    font-size: 25px;
+    color: #FFF;
+    margin-top: 5%;
+}

@@ -1,0 +1,84 @@
+/*Responsividade*/
+
+@media only screen and (max-width: 1000px) {
+
+    /*Section3 - Sobre mim*/
+
+    #section3_matheus h1 {
+        font-size: 40px;
+    }
+    
+    #section3_matheus h3 {
+        font-size: 30px;
+    }
+    
+    #section3_matheus p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    /*Section3 - Sobre mim*/
+
+    #section3_matheus article {
+        width: 95%;
+        column-gap: 5%;
+    }
+
+    #section3_matheus article img {
+        width: 100%;
+        animation-name: none;
+        filter: drop-shadow(-10px 10px 0 #0921D7);
+    }
+
+    #section3_matheus h1 {
+        font-size: 30px;
+    }
+    
+    #section3_matheus h3 {
+        font-size: 22px;
+        margin-top: 1%;
+    }
+    
+    #section3_matheus p {
+        font-size: 15px;
+        margin-top: 2%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+     /*Section3 - Sobre mim*/
+
+     #section3_matheus article {
+        width: 100%;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    #section3_part1, #section3_part2 {
+        width: 85%;
+        margin: auto;
+    }
+
+    #section3_matheus article img {
+        width: 100%;
+        animation-name: none;
+        filter: drop-shadow(-10px 10px 0 #0921D7);
+    }
+
+    #section3_matheus h1 {
+        font-size: 35px;
+    }
+    
+    #section3_matheus h3 {
+        font-size: 22px;
+        margin-top: 2%;
+    }
+    
+    #section3_matheus p {
+        font-size: 20px;
+        margin-top: 5%;
+    }
+}
