@@ -1,3 +1,41 @@
+/*Animações para o responsivo*/
+
+@keyframes modal1 {
+    25% {
+        filter: brightness(100%);
+    }
+
+    50% {
+        filter: brightness(100%);
+    }
+
+    75% {
+        filter: brightness(15%);
+    }
+
+    100% {
+        filter: brightness(15%);
+    }
+}
+
+@keyframes modal2 {
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 /*Responsividade*/
 
 @media only screen and (max-width: 1000px) {
@@ -14,6 +52,14 @@
     
     #section3_matheus p {
         font-size: 20px;
+    }
+
+    /*Section4 - Meus Projetos*/
+
+    #section4_matheus h1 {
+        font-size: 40px;
+        color: #FFF;
+        text-align: center;
     }
 }
 
@@ -44,6 +90,36 @@
     #section3_matheus p {
         font-size: 15px;
         margin-top: 2%;
+    }
+
+    /*Section4 - Meus Projetos*/
+
+    .projeto_img {
+        animation: modal1 10s ease-in alternate infinite ;
+    }
+
+    .modal {
+        animation: modal2 10s ease-in alternate infinite ;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+
+    /*Section4 - Meus Projetos*/
+
+    .modal {
+        width: 400px;
+        height: 200px;
+    }
+
+    .modal p {
+        font-size: 20px;
+        text-align: center;
+        color: #FFF;
+    }
+
+    .projetos a {
+        width: 400px;
     }
 }
 
@@ -80,5 +156,37 @@
     #section3_matheus p {
         font-size: 20px;
         margin-top: 5%;
+    }
+
+    /*Section4 - Meus Projetos*/
+
+    .modal {
+        width: 90%;
+        height: 180px;
+        gap: 15px;
+    }
+
+    .modal h2 {
+        font-size: 22px;
+    }
+
+    .modal div img {
+        width: 45px;
+    }
+
+    .modal p {
+        font-size: 20px;
+        align-items: center;
+        text-align: center;
+        color: #FFF;
+    }
+
+    .projetos a {
+        width: 100%;
+    }
+
+    .projetos h3 {
+        font-size: 20px;
+        padding: 5px 0;
     }
 }

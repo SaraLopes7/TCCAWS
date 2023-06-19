@@ -1,3 +1,5 @@
+/*Efeitos de CSS*/
+
 @keyframes effect_img1 {
     0% {
         filter: drop-shadow(-20px 20px 0px #0921D7);
@@ -16,17 +18,34 @@
     }
 }
 
+/*Variáveis CSS*/
+
+:root {
+    --background_color: linear-gradient(180deg, #4D4646 12.56%, #0921D7 216.73%);
+    --section3_color: linear-gradient(180deg, #4D4646 -41.09%, rgba(8, 175, 255, 0.5) 333.08%);
+    --projetos_color: linear-gradient(180deg, #4D4646 -27.23%, rgba(8, 175, 255, 0.5) 208.04%);
+}
+
+/*Página principal*/
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .main_matheus {
     position: relative;
     width: 100%;
     height: auto;
-    background: linear-gradient(180deg, #4D4646 12.56%, #0921D7 216.73%);
+    background: var(--background_color);
 }
+
+/*Section 3 - Sobre mim*/
 
 #section3_matheus {
     width: 100%;
     height: auto;
-    background: linear-gradient(180deg, #4D4646 -41.09%, rgba(8, 175, 255, 0.5) 333.08%);
+    background: var(--section3_color);
     border-radius: 0px 0px 50px 50px;
     padding: 25px 0;
 }
@@ -56,7 +75,8 @@
 #section3_matheus article img {
     width: 100%;
     animation-name: effect_img1;
-    animation-duration: 30s;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
 
@@ -75,4 +95,100 @@
     font-size: 25px;
     color: #FFF;
     margin-top: 5%;
+}
+
+/*Section 4 - Meus Projetos*/
+
+#section4_matheus {
+    width: 100%;
+    height: auto;
+}
+
+#section4_matheus article {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 1%;
+    margin-top: 15px;
+    padding-bottom: 45px;
+}
+
+#section4_matheus h1 {
+    font-size: 55px;
+    color: #FFF;
+    text-align: center;
+}
+
+/*Modal dos projetos*/
+
+.modal {
+    position: absolute;
+    width: 550px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    opacity: 0;
+    transition: ease-in 0.7s;
+    z-index: 10;
+}
+
+.modal h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #FFF;
+}
+
+.modal div {
+    display: flex;
+    justify-content: center;
+}
+
+.modal div img {
+    width: 55px;
+    border-radius: 0;
+}
+
+.modal p {
+    font-size: 22px;
+    text-align: center;
+    color: #FFF;
+}
+
+/*Projetos*/
+
+.projetos a {
+    width: 550px;
+    height: auto;
+    background: var(--projetos_color);
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projetos:hover .projeto_img {
+    filter: brightness(15%);
+}
+
+.projetos:hover .modal {
+    opacity: 1;
+}
+
+.projetos img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    transition: ease-in-out 0.7s;
+}
+
+.projetos h3 {
+    font-size: 25px;
+    text-align: center;
+    color: #FFF;
+    padding: 5px 0;
 }
