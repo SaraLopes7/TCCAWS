@@ -72,25 +72,45 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 115px;
+    gap: 195px;
     padding-top: 60px;
     margin-top: 50px;
 }
 
-#cartao{
-    width: 20%;
-    height: 320px; 
+.divisao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.cartao{
+    width: 100%;
+    height: 330px; 
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
 }
 
-#cartao img{
-    width: 150px;
-   
-    
+.cartao img{
+    width: 480px;
+    object-fit: contain;
+}
+
+.cartao button{
+    background-color: rgb(65, 64, 64);
+    padding: 13px;
+    font-size: 15px;
+}
+
+.cartao button:hover{
+    background-color: white;
+    transition: 0.3s all;
+    color: black;
+
 }
