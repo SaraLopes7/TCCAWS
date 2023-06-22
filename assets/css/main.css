@@ -1777,6 +1777,7 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+			border-radius: 10px;
 		}
 
 		.image.fit {
@@ -1787,7 +1788,7 @@ input, select, textarea {
 		.image.featured {
 			display: block;
 			width: 100%;
-			margin: 0 0 4em 0;
+			margin: 0 0 2em 0;
 		}
 
 		.image.left {

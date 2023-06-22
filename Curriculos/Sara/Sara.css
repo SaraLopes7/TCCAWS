@@ -1,0 +1,112 @@
+/* 
+Minha paleta de cores:
+Azul fundo - #eafdfd
+rosa fundo - #fdfdfd
+cinza texto - #3c3b3b
+aqua - #2ebaae
+azul ecuro - #07075c
+*/
+
+main {
+    background-color: #eafdfd;
+    position: relative;
+    padding: 2%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: #07075c;
+    font-weight: bold;
+    margin-left: 22%;
+}
+
+/* MINHA APRESENTAÇÃO */
+
+.minhaFoto {
+    width: 20%;
+    border-radius: 50%;
+    margin: 3% auto 0 2%;
+}
+
+.apresentacao {
+    background-color: #fdefef;
+    border-radius: 30px;
+    width: 60%;
+    padding: 1%;
+    margin: 0 auto 2% 20%;
+}
+
+.quadroApresentacao {
+    width: 75%;
+    height: auto; 
+    border-radius: 30px;
+    background-color: #9fffff;
+    font-size: medium;
+    font-weight: bold;
+    text-align: right;
+    color: #07075c;
+    padding: 1%;
+    margin: -24% auto 0 24%;
+}
+
+.quadroApresentacao button{
+    background-color: #2ebaae;
+    padding: 1.5%;
+    font-size: 15px;
+    color: #fdfdfd;
+    margin-left: 2%;
+}
+
+.quadroApresentacao a:hover{
+    transition: 0.3s all;
+    color: #07075c;
+    font-weight: bold;
+}
+
+/* PORTIFOLIO */
+
+article {
+    width: 60%;
+    height: auto;
+    background-color: #fdefef;
+    border-radius: 30px;
+    margin: 0 auto 2% 20%;
+}
+
+.portifolio .fotoPortifolio {
+    width: 35%;
+    height: auto;
+    margin-left: 35%;
+    margin-top: -4%;
+    margin-bottom: -8%;
+}
+
+.portifolio .fotoPortifoliopc {
+    width: 45%;
+    height: auto;
+    margin-left: 31%;
+    margin-top: -9%;
+    margin-bottom: -15%;
+}
+
+.portifolio div {
+    padding-left: 32%;
+    padding-bottom: 1%;
+}
+
+.portifolio button {
+    background-color: #07075c;
+    padding: 1.5%;
+    font-size: 15px;
+    color: #9fffff;
+    margin-left: 2%;
+}
+
+.portifolio a:hover {
+    transition: 0.3s all;
+    color: #2ebaae;
+    font-weight: bold;
+}
