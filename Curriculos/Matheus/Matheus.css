@@ -1,3 +1,8 @@
+/*Fontes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap');
+
+
 /*Efeitos de CSS*/
 
 @keyframes effect_img1 {
@@ -24,6 +29,7 @@
     --background_color: linear-gradient(180deg, #4D4646 12.56%, #0921D7 216.73%);
     --section3_color: linear-gradient(180deg, #4D4646 -41.09%, rgba(8, 175, 255, 0.5) 333.08%);
     --projetos_color: linear-gradient(180deg, #4D4646 -27.23%, rgba(8, 175, 255, 0.5) 208.04%);
+    --textos_fonte: 'Readex Pro';
 }
 
 /*Página principal*/
@@ -40,9 +46,9 @@ a {
     background: var(--background_color);
 }
 
-/*Section 3 - Sobre mim*/
+/*Section 1 - Sobre mim*/
 
-#section3_matheus {
+#section1_matheus {
     width: 100%;
     height: auto;
     background: var(--section3_color);
@@ -50,7 +56,7 @@ a {
     padding: 25px 0;
 }
 
-#section3_matheus article {
+#section1_matheus article {
     width: 90%;
     height: auto;
     display: flex;
@@ -58,21 +64,21 @@ a {
     column-gap: 5%;
 }
 
-#section3_part1 {
+#section1_part1 {
     width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#section3_part2 {
+#section1_part2 {
     width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#section3_matheus article img {
+#section1_matheus article img {
     width: 100%;
     animation-name: effect_img1;
     animation-duration: 10s;
@@ -80,31 +86,48 @@ a {
     animation-iteration-count: infinite;
 }
 
-#section3_matheus h1 {
+#section1_matheus h1 {
+    font-family: var(--textos_fonte);
     font-size: 55px;
     color: #FFF;
 }
 
-#section3_matheus h3 {
+#section1_matheus h3 {
+    font-family: var(--textos_fonte);
     font-size: 35px;
     color: #FFF;
     margin-top: 2%;
 }
 
-#section3_matheus p {
+#section1_matheus p {
+    font-family: var(--textos_fonte);
     font-size: 25px;
     color: #FFF;
     margin-top: 5%;
 }
 
-/*Section 4 - Meus Projetos*/
+#section1_matheus button {
+    width: 40%;
+    font-family: var(--textos_fonte);
+    font-size: 22px;
+    color: #ffffff;
+    background-color: #0921D7;
+    padding: 5px 0;
+    transition: ease-in-out 0.3s;
+}
 
-#section4_matheus {
+#section1_matheus button:hover {
+    transform: scale(1.05, 1.05);
+}
+
+/*Section 2 - Meus Projetos*/
+
+#section2_matheus {
     width: 100%;
     height: auto;
 }
 
-#section4_matheus article {
+#section2_matheus article {
     width: 90%;
     height: auto;
     margin: auto;
@@ -116,7 +139,8 @@ a {
     padding-bottom: 45px;
 }
 
-#section4_matheus h1 {
+#section2_matheus h1 {
+    font-family: var(--textos_fonte);
     font-size: 55px;
     color: #FFF;
     text-align: center;
@@ -138,6 +162,7 @@ a {
 }
 
 .modal h2 {
+    font-family: var(--textos_fonte);
     font-size: 30px;
     text-align: center;
     color: #FFF;
@@ -154,6 +179,7 @@ a {
 }
 
 .modal p {
+    font-family: var(--textos_fonte);
     font-size: 22px;
     text-align: center;
     color: #FFF;
@@ -161,13 +187,16 @@ a {
 
 /*Projetos*/
 
+.projetos {
+    margin-top: 45px;
+}
+
 .projetos a {
     width: 550px;
     height: auto;
     background: var(--projetos_color);
     border-radius: 15px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 45px;
     display: flex;
     flex-direction: column;
 }
@@ -187,6 +216,7 @@ a {
 }
 
 .projetos h3 {
+    font-family: var(--textos_fonte);
     font-size: 25px;
     text-align: center;
     color: #FFF;
