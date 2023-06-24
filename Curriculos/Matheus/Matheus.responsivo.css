@@ -40,23 +40,42 @@
 
 @media only screen and (max-width: 1000px) {
 
-    /*Section3 - Sobre mim*/
+    /*Section1 - Sobre mim*/
 
-    #section3_matheus h1 {
+    #section1_matheus article {
+        width: 100%;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    #section1_part1, #section1_part2 {
+        width: 85%;
+        margin: auto;
+    }
+
+    #section1_matheus h1 {
         font-size: 40px;
     }
     
-    #section3_matheus h3 {
+    #section1_matheus h3 {
         font-size: 30px;
     }
     
-    #section3_matheus p {
+    #section1_matheus p {
         font-size: 20px;
     }
 
-    /*Section4 - Meus Projetos*/
+    #section1_matheus button {
+        width: 100%;
+        font-size: 20px;
+        height: auto;
+        line-height: 2em;
+        padding: 0;
+    }
 
-    #section4_matheus h1 {
+    /*Section2 - Meus Projetos*/
+
+    #section2_matheus h1 {
         font-size: 40px;
         color: #FFF;
         text-align: center;
@@ -65,34 +84,33 @@
 
 @media only screen and (max-width: 768px) {
 
-    /*Section3 - Sobre mim*/
+    /*Section1 - Sobre mim*/
 
-    #section3_matheus article {
+    #section1_matheus article {
         width: 95%;
         column-gap: 5%;
     }
 
-    #section3_matheus article img {
-        width: 100%;
+    #section1_matheus article img {
         animation-name: none;
         filter: drop-shadow(-10px 10px 0 #0921D7);
     }
 
-    #section3_matheus h1 {
+    #section1_matheus h1 {
         font-size: 30px;
     }
     
-    #section3_matheus h3 {
+    #section1_matheus h3 {
         font-size: 22px;
         margin-top: 1%;
     }
     
-    #section3_matheus p {
+    #section1_matheus p {
         font-size: 15px;
         margin-top: 2%;
     }
 
-    /*Section4 - Meus Projetos*/
+    /*Section2 - Meus Projetos*/
 
     .projeto_img {
         animation: modal1 10s ease-in alternate infinite ;
@@ -105,7 +123,7 @@
 
 @media only screen and (max-width: 675px) {
 
-    /*Section4 - Meus Projetos*/
+    /*Section2 - Meus Projetos*/
 
     .modal {
         width: 400px;
@@ -115,7 +133,6 @@
     .modal p {
         font-size: 20px;
         text-align: center;
-        color: #FFF;
     }
 
     .projetos a {
@@ -125,40 +142,29 @@
 
 @media only screen and (max-width: 480px) {
 
-     /*Section3 - Sobre mim*/
+     /*Section1 - Sobre mim*/
 
-     #section3_matheus article {
-        width: 100%;
-        flex-direction: column;
-        row-gap: 40px;
-    }
-
-    #section3_part1, #section3_part2 {
-        width: 85%;
-        margin: auto;
-    }
-
-    #section3_matheus article img {
+    #section1_matheus article img {
         width: 100%;
         animation-name: none;
         filter: drop-shadow(-10px 10px 0 #0921D7);
     }
 
-    #section3_matheus h1 {
+    #section1_matheus h1 {
         font-size: 35px;
     }
     
-    #section3_matheus h3 {
+    #section1_matheus h3 {
         font-size: 22px;
         margin-top: 2%;
     }
     
-    #section3_matheus p {
+    #section1_matheus p {
         font-size: 20px;
         margin-top: 5%;
     }
 
-    /*Section4 - Meus Projetos*/
+    /*Section2 - Meus Projetos*/
 
     .modal {
         width: 90%;
@@ -177,8 +183,6 @@
     .modal p {
         font-size: 20px;
         align-items: center;
-        text-align: center;
-        color: #FFF;
     }
 
     .projetos a {
