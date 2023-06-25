@@ -1,0 +1,184 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    
+}
+section{
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+   
+    
+}
+article{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+    padding-top: 60px;
+}
+
+#QuadroR{
+    width: 20%;
+    height: 320px; 
+border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#QuadroR img{
+    width: 240px;
+   
+    
+}
+#QuadroR2{
+    width: 45%;
+    height: 245px; 
+  
+    background-color: rgb(43, 43, 43);
+    font-size: large;
+    text-align: right;
+    color: white;
+    padding: 20px;
+}
+
+#QuadroR2 button{
+    align-items: center;
+    padding: 20px;
+    width: 242px;
+    font-size: 15px;
+    background-color: rgb(0, 72, 255);
+   
+}
+#QuadroR2 button:hover {
+    transform: scale(1.05, 1.05);
+    background-color: rgb(124, 22, 202);
+}
+
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-right: 950px;
+    padding-top: 40px;
+    font-size: 30px;
+}
+
+h3{
+    text-align: center;
+    color: rgb(0, 72, 255);;
+    font-size: 50px;
+}
+
+
+
+
+/*Section 2 - Meus Projetos*/
+
+#section2_renan {
+    width: 100%;
+    height: auto;
+}
+
+#section2_renan article {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 1%;
+
+}
+
+#section2_renan h1 {
+    font-family: var(--textos_fonte);
+    font-size: 55px;
+    color: #FFF;
+    text-align: center;
+}
+
+/*Modal dos projetos*/
+
+.modal {
+    position: absolute;
+    width: 550px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    opacity: 0;
+    transition: ease-in 0.7s;
+    z-index: 10;
+}
+
+.modal h2 {
+    font-family: var(--textos_fonte);
+    font-size: 30px;
+    text-align: center;
+    color: #FFF;
+}
+
+.modal div {
+    display: flex;
+    justify-content: center;
+}
+
+.modal div img {
+    width: 55px;
+    border-radius: 0;
+}
+
+.modal p {
+    font-family: var(--textos_fonte);
+    font-size: 22px;
+    text-align: center;
+    color: #FFF;
+}
+
+/*Projetos*/
+
+.projetos {
+    margin-top: 0px;
+}
+
+.projetos a {
+    width: 550px;
+    height: auto;
+    background: var(--projetos_color);
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.projetos:hover .projeto_img {
+    filter: brightness(15%);
+}
+
+.projetos:hover .modal {
+    opacity: 1;
+}
+
+.projetos img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    transition: ease-in-out 0.7s;
+}
+
+.projetos h3 {
+    font-family: var(--textos_fonte);
+    font-size: 25px;
+    text-align: center;
+    color: #FFF;
+    padding: 5px 0;
+}
