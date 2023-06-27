@@ -1,115 +1,122 @@
-*{
+* {
     border: 0;
     margin: 0;
     box-sizing: border-box;
-}
-main{
+  }
+  
+  main {
     position: relative;
     width: 100%;
     height: 200px;
-    
-}
-section{
+  }
+  
+  section {
     background-color: rgb(7, 0, 53);
     width: 100%;
     height: auto;
     padding-bottom: 30px;
-   
-    
-}
-article{
+  }
+  
+  article {
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 180px;
     padding-top: 60px;
-}
-
-#QuadroR{
+    text-align: justify;
+  }
   
-    height: 20px; 
-border-radius: 50px;
-    
+  #QuadroR {
+    height: 20px;
+    border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-#QuadroR img{
-    width: 240px;
-   
-    
-}
-#QuadroR2{
-    width: 45%;
-    height: 245px; 
+  }
   
-    background-color: rgb(255, 255, 255);
+  #QuadroR img {
+    width: 240px;
+  }
+
+  #QuadroR p{
+   text-align: justify;
+   margin-left: 70px;
+   margin-right: 70px;
+  }
+  
+  
+  #QuadroR2 {
+    width: 65%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.082);
     font-size: large;
     font-style: initial;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 20px;
-}
-
-#QuadroR2 button{
+    margin-bottom: 20px;
+  }
+  
+  #QuadroR2 button {
     align-items: center;
-    padding: 20px;
-    width: 242px;
+    columns: flex;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    display: inline-flexbox;
+    width: 245px;
     font-size: 15px;
     background-color: rgb(0, 72, 255);
-   
-}
-#QuadroR2 button:hover {
+  }
+  
+  #QuadroR2 button:hover {
     transform: scale(1.05, 1.05);
     background-color: rgb(0, 0, 0);
-}
-
-h1{
+  }
+  
+  h1 {
     text-align: center;
     color: rgb(255, 255, 255);
-    padding-right: 950px;
-    padding-top: 40px;
+    padding: 40px 20px;
     font-size: 30px;
-}
-
-h3{
+  }
+  
+  h3 {
     text-align: center;
-    color: rgb(255, 255, 255);;
+    color: rgb(255, 255, 255);
     font-size: 50px;
-}
-
-
-
-
-/*Section 2 - Meus Projetos*/
-
-#section2_renan {
+  }
+  
+  /*Section 2 - Meus Projetos*/
+  
+  #section2_renan {
     width: 100%;
     height: auto;
-}
-
-#section2_renan article {
+    margin: auto;
+    display: flexbox;
+  }
+  
+  #section2_renan article {
     width: 90%;
     height: auto;
     margin: auto;
-    display: flex;
+  
     flex-wrap: wrap;
-    justify-content: space-around;
-    column-gap: 1%;
-
-}
-
-#section2_renan h1 {
+    justify-content: center;
+    gap: 1%;
+  }
+  
+  #section2_renan h1 {
     font-family: var(--textos_fonte);
     font-size: 55px;
     color: #FFF;
     text-align: center;
-}
-
-/*Modal dos projetos*/
-
-.modal {
+    padding: 40px 20px;
+  }
+  
+  .modal {
+    margin-top: 80px;
     position: absolute;
     width: 550px;
     height: 265px;
@@ -183,3 +190,38 @@ h3{
     color: #FFF;
     padding: 5px 0;
 }
+
+/*Section2 - Meus Projetos*/
+
+.modal {
+    width: 90%;
+    height: 180px;
+    gap: 15px;
+}
+
+.modal h2 {
+    font-size: 22px;
+}
+
+.modal h3 {
+    font-size: 50px;
+}
+
+.modal div img {
+    width: 45px;
+}
+
+.modal p {
+    font-size: 20px;
+    align-items: center;
+}
+
+.projetos a {
+    width: 100%;
+}
+
+.projetos h3 {
+    font-size: 20px;
+    padding: 5px 0;
+}
+
