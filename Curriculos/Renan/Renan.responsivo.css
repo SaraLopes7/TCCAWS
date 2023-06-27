@@ -60,12 +60,12 @@
   
   #QuadroR2 button {
     align-items: center;
-    columns: flex;
+    columns:center;
     text-align: center;
-    margin-top: 10px;
-    padding: 10px;
-    display: inline-flexbox;
-    width: 245px;
+    margin-top: 5px;
+    padding: 15px;
+   
+    width: 200px;
     font-size: 15px;
     background-color: rgb(0, 72, 255);
   }
@@ -156,7 +156,7 @@
 /*Projetos*/
 
 .projetos {
-    margin-top: 0px;
+    margin-top: 30px;
 }
 
 .projetos a {
