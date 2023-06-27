@@ -27,10 +27,10 @@ article{
 }
 
 #QuadroR{
-    width: 20%;
-    height: 320px; 
+  
+    height: 20px; 
 border-radius: 50px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
