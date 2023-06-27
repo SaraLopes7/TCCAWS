@@ -62,7 +62,9 @@
     align-items: center;
     columns:center;
     text-align: center;
-    margin-top: 5px;
+    margin: auto;
+    margin-top: 7px;
+
     padding: 15px;
    
     width: 200px;
